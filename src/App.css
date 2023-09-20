@@ -362,37 +362,3 @@ nav {
     padding: 7px 15px;
   }
 }
-
-
-
-/* circle cursor */
-html {
-  cursor: none !important;
-} 
-
-#circularcursor {
-  background-color: transparent;
-  border:2px solid #ff4a17;    
-  height:50px;
-  width:50px;
-  border-radius:50%;
-  -moz-border-radius:50%;
-  -webkit-border-radius:50%;
-  position: absolute;
-  z-index: 999;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  scroll-behavior: smooth;
-  transition: all .2s ease;
-}
-
-.circle1{
-  width:5px;
-  height:5px;
-  margin: 0 auto;
-  background: #ff4a17;
-  border-radius:50%;
-  pointer-events: none;
-  /* transition: all .15s ease; */
-}

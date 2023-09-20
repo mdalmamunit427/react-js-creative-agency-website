@@ -1,7 +1,7 @@
 import "./App.css";
 import About from "./components/About";
 import Blogs from "./components/Blogs";
-import CircularCursor from "./components/CircularCursor";
+
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
@@ -23,7 +23,6 @@ function App() {
       <Contact/>
       <div className="h-20"></div>
       <Footer/>
-      <CircularCursor/>
     </div>
   );
 }
