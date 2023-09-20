@@ -140,15 +140,16 @@ nav {
 
 .cs-video_block_1_wrap {
   position: relative;
-  &::before {
-    content: "";
-    position: absolute;
-    height: 50%;
-    width: 100%;
-    left: 0%;
-    top: 0%;
-    background-color: #000;
-  }
+}
+
+.cs-video_block_1_wrap::before {
+  content: "";
+  position: absolute;
+  height: 50%;
+  width: 100%;
+  left: 0%;
+  top: 0%;
+  background-color: #000;
 }
 
 .cs-video_block.cs-style1 {
@@ -158,25 +159,26 @@ nav {
   z-index: 10;
   overflow: hidden;
   border-radius: 20px;
-  &::before {
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    left: 0;
-    top: 0;
-    opacity: 0;
-    background-color: rgba(black, 0.4);
-    transition: all 0.4s ease;
-  }
-  &:hover {
-    &::before {
-      opacity: 1;
-    }
-  }
-  &.cs-size1 {
-    height: 580px;
-  }
+}
+
+.cs-video_block.cs-style1::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  background-color: rgba(black, 0.4);
+  transition: all 0.4s ease;
+}
+
+.cs-video_block.cs-style1:hover::before, .cs-video_block.cs-style1:hover{
+  opacity: 1;
+}
+
+.cs-video_block.cs-style1 .cs-size1 {
+  height: 580px;
 }
 
 .cs-player_btn {
@@ -269,20 +271,23 @@ nav {
   background-color: #000;
   border-radius: 50%;
   z-index: 10;
-  &:nth-child(1) {
+}
+
+  .cs-shape_4:nth-child(1) {
     left: 5%;
     top: 32%;
     height: 100px;
     width: 100px;
     animation: animo-y 8s infinite;
   }
-  &:nth-child(2) {
+
+  .cs-shape_4:nth-child(2) {
     left: 15%;
     top: 56%;
     height: 220px;
     width: 220px;
   }
-}
+
 
 @keyframes animo-y {
   50% {
@@ -358,7 +363,7 @@ nav {
   .newsletter_input {
     padding: 5px 80px 5px 15px;
   }
-  .newsletter_btn{
+  .newsletter_btn {
     padding: 7px 15px;
   }
 }

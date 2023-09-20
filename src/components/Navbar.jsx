@@ -70,7 +70,7 @@ const Navbar = () => {
               {isMenuOpen ? (
                 <FaXmark  className="h-6 w-6 text-primary"/>
               ) : (
-                <FaBars className="h-6 w-6 text-primary" />
+                <FaBarsStaggered className="h-7 w-7 text-primary p-1 border rounded-full" />
               )}
             </button>
           </div>
